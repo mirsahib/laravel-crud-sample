@@ -6,13 +6,16 @@ import React, { Component } from 'react'
     import SingleEmployee from './singleEmployee'
     import NewEmployee from './newEmployee'
     import EditEmployee from './editEmployee'
+    import Disclaimer from './disclaimer'
 
     class App extends Component {
       render () {
         return (
           <BrowserRouter>
-            <div>
+            <div className ='container'>
               <Header />
+              <Disclaimer />
+
               <Switch>
                 <Route exact path='/' component={EmployeeList} />
                 <Route exact path='/create' component={NewEmployee} />
