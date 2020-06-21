@@ -9,6 +9,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Employee Details</title>
         <!-- Styles -->
+        <!-- <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet"> -->
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>

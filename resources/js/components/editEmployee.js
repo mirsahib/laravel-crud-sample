@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 class EditEmployee extends Component {
     constructor (props) {
         super(props)
@@ -136,7 +137,16 @@ class EditEmployee extends Component {
                         />
                         {this.renderErrorFor('bio')}
                       </div>
-                      <button className='btn btn-primary'>Create</button>
+                      
+                        <div className="row">
+                          <div className='col text-center'>
+                          <button className='btn btn-primary'>Create</button>
+                        <Link className='btn btn-success ml-5' to='/'>
+                        Back
+                        </Link>
+                          </div>
+                        </div>
+                      
                     </form>
                   </div>
                 </div>
